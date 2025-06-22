@@ -62,4 +62,4 @@ if st.button("Generate Images"):
     cols = st.columns(5)
     for i in range(5):
         img_np = imgs[i].squeeze().numpy()
-        cols[i].image(img_np, use_column_width=True, clamp=True, caption=f"Sample {i+1}")
+        cols[i].image(img_np, use_container_width=True, clamp=True, caption=f"Sample {i+1}")
